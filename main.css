@@ -29,7 +29,7 @@ a:link,
 a:hover,
 a:visited,
 a:active {
-  color: #1db954;
+  color: #7dd3fc;
   text-decoration: none;
 }
 *,
@@ -410,13 +410,13 @@ nav > ul li a:active {
   color: #222228;
 }
 .iconTop {
-  color: #1db954;
+  color: #7dd3fc;
 }
 .socialIconBack {
   color: #222228;
 }
 .socialIconTop {
-  color: #1db954;
+  color: #7dd3fc;
 }
 .featureText {
   margin-left: 18px;
@@ -769,7 +769,7 @@ footer {
   line-height: inherit;
 }
 .markdown-body a {
-  color: #1db954;
+  color: #7dd3fc;
   text-decoration: none;
 }
 .markdown-body a:hover {
