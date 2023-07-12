@@ -97,7 +97,7 @@ a:active {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 115px 876px auto auto;
   grid-column-gap: 30px;
-  grid-template-areas: "h h h h h h h h h h h h" "p p p p p i i i i i i i" "c c c c c c c c c c c c" "f f f f f f f f f f f f";
+  grid-template-areas: "h h h h h h h h h h h h" "p p p p p i i i i i i i" "c c c c c c c c c c c c" "t t t t t t t t t t t t" "f f f f f f f f f f f f";
 }
 .subPageContainer {
   grid-template-rows: 115px auto auto auto;
@@ -113,7 +113,7 @@ a:active {
     grid-column-gap: 0px;
     grid-template-columns: 1;
     grid-template-rows: 115px auto auto auto auto;
-    grid-template-areas: "h h h h h h h h h h h h" "i i i i i i i i i i i i" "p p p p p p p p p p p p" "c c c c c c c c c c c c" "f f f f f f f f f f f f";
+    grid-template-areas: "h h h h h h h h h h h h" "i i i i i i i i i i i i" "p p p p p p p p p p p p" "c c c c c c c c c c c c" "t t t t t t t t t t t t" "f f f f f f f f f f f f";
   }
 }
 .page {
@@ -351,6 +351,16 @@ nav > ul li a:active {
   margin-left: 26px;
   margin-top: 23px;
 }
+.threeScreensSection {
+  grid-area: t;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.threeScreens {
+  width: 80%;
+}
 .videoContainer {
   width: 349px;
   height: 755px;
@@ -405,6 +415,10 @@ nav > ul li a:active {
   .videoContainer > video {
     width: 226px;
     height: 488px;
+  }
+
+  .threeScreens {
+    width: 100%;
   }
 }
 .features {
