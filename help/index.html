@@ -128,8 +128,12 @@
         </header>
         <article class="page markdown-body">
             <h1>FAQ - Frequently Asked Questions</h1>
+            <h2>How are statistics calculated?</h2>
+            <p class="answer" style="display: none;">
+              Thanks to the GPDR law in Europe, Discord is required to let you download all of your data. This data package contains all of your messages, servers, friends, etc. You can then import this data package into Dumpus and see your statistics. There is of course no way for us to access your data package and you can run the calculations locally as everything is open source. <br />
+            </p>
             <h2>How can I get my Discord Data Package?</h2>
-            <p id="answer1" style="display: none;">
+            <p class="answer" style="display: none;">
               You can get your Discord Data Package by following these steps:<br />
               1. Open Discord on your phone or computer. <br />
               2. Go to the User Settings. <br />
@@ -137,23 +141,23 @@
               4. Scroll down to the bottom and click on "Request all of my Data". <br />
             </p>
             <h2>Can I see my statistics before I receive my data package?</h2>
-            <p id="answer2" style="display: none;">
+            <p class="answer" style="display: none;">
               You need to wait to receive your package. Discord may take up to 30 days to send you your data package. Once you receive it, you can upload it to Dumpus and see your statistics. <br />
             </p>
             <h2>Is the app completely free?</h2>
-            <p id="answer3" style="display: none;">
+            <p class="answer" style="display: none;">
               <b>TLDR; our app is free and has an optional premium version.</b><br /><br />
               We share our entire source code on GitHub along with instructions on how to build the app yourself (for both classic and premium versions). You can technically build the app yourself, and execute the window.setPremium(true) shortcut to bypass the Supporter payment. <br /><br />
               Please, only do this if you are using your own API server. If you are using our servers to make the calculations, consider supporting us by buying the Supporter version. <br />
             </p>
             <h2>How can I be sure my data won't be stolen?</h2>
-            <p id="answer4" style="display: none;">
+            <p class="answer" style="display: none;">
               As I said previously, we share our entire source code on GitHub. Any developer or geek should take the time to build their own API instance to make sure the data don't leave their devices.<br /><br />
               
               Netherless, even if you are using our free API server, we will <b>never</b> store your data on our servers (it would be very risky for us). We took a lot of time to think about the best way to handle the packages, and we came up with a solution that don't allow admins to ever read the content of the packages. <br />
             </p>
             <h2>Do you have a Discord server?</h2>
-            <p id="answer5" style="display: none;">
+            <p class="answer" style="display: none;">
               Yes, we have a Discord server. You can join it by clicking <a href="https://androz2091.fr/discord" target="_blank">here</a>. <br />
             </p>
         </article>
@@ -199,7 +203,7 @@
         var headers = document.getElementsByTagName("h2");
         for (let i = 0; i < headers.length; i++) {
           headers[i].addEventListener("click", function() {
-            var answer = document.getElementById("answer" + (i + 1));
+            const answer = document.getElementsByClassName("answer")[i];
             if (answer.style.display === "none") {
               answer.style.display = "block";
             } else {
