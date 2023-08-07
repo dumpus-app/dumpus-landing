@@ -1,0 +1,26 @@
+{
+  "name": "dumpus-landing",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Mittelblut9",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "format": "npm run stop && docker run --rm -v $(pwd):/app -w /app node:18.8 sh -c \"npm install -g prettier && prettier --config .tools/prettier/.prettierrc --ignore-path .tools/prettier/.prettierignore --write .\"",
+    "check": "docker run --rm -v $(pwd):/app -w /app node:18.8 sh -c \"npm install -g prettier && prettier --config .tools/prettier/.prettierrc --ignore-path .tools/prettier/.prettierignore --check .\""
+  },
+  "dependencies": {
+    "vue": "^3.2.13",
+    "vue-router": "^4.0.3"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-service": "~5.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ]
+}
