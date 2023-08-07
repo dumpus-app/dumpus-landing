@@ -1,7 +1,7 @@
 *,
 header *,
 .markdown-body h1,
-.subPageHeaderBackground .logo>p,
+.subPageHeaderBackground .logo > p,
 h1,
 p,
 h2,
@@ -17,8 +17,8 @@ h5,
     color: #fff;
 }
 
-.subPageHeaderBackground nav>ul li a:link,
-.subPageHeaderBackground nav>ul li a:visited {
+.subPageHeaderBackground nav > ul li a:link,
+.subPageHeaderBackground nav > ul li a:visited {
     color: rgba(255, 255, 255, 0.6);
 }
 

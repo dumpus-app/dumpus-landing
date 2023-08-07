@@ -1,8 +1,7 @@
 <template>
     <footer>
         <p class="footerText">
-            Made by <a href="https://github.com/Androz2091">Androz2091</a> in
-            France
+            Made by <a href="https://github.com/Androz2091">Androz2091</a> in France
         </p>
         <div class="footerIcons">
             <a href="https://androz2091.fr/discord">
@@ -26,7 +25,9 @@
         </div>
         <div class="footerLinks">
             <a href="/" target="_self">Home</a>
-            <a href="https://github.com/dumpus-app/dumpus-app/releases" target="_blank">What's New</a>
+            <a href="https://github.com/dumpus-app/dumpus-app/releases" target="_blank"
+                >What's New</a
+            >
             <a href="/legal/privacy" target="_self">Privacy Policy</a>
             <a href="/legal/terms" target="_self">Terms & Conditions</a>
             <a href="/help" target="_self">Help</a>
@@ -37,7 +38,7 @@
 <script>
 export default {
     name: 'Footer',
-}
+};
 </script>
 
 <style>
