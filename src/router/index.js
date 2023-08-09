@@ -17,7 +17,7 @@ const routes = [
     },
     {
         path: '/legal/privacy',
-        name: 'terms',
+        name: 'privacy',
         component: function () {
             return import('../views/legal/Privacy.vue');
         },
