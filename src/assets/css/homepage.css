@@ -1,5 +1,5 @@
 .imageWrapper {
-    height: 714px;
+    height: 800px;
     background: var(--color-gray-900);
     background-repeat: no-repeat;
     background-size: cover;
@@ -247,6 +247,12 @@
     .threeScreens {
         width: 100%;
     }
+}
+
+.webAppLink {
+    padding: 10px 20px;
+    margin-top: 30px;
+    text-align: center;
 }
 
 .features {

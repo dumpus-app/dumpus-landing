@@ -43,6 +43,9 @@
                 href="https://apps.apple.com/us/app/dumpus-stats-for-discord/id6450952260"
                 ><img class="appStore" src="@/assets/img/appstore.png"
             /></a>
+            <div class="webAppLink" v-if="isViewingOnWeb">
+                <a href="https://web.dumpus.app">Try on web</a>
+            </div>
         </div>
     </div>
     <div class="features">
@@ -146,6 +149,18 @@
 <script>
 export default {
     name: 'Homepage',
+    data() {
+        return {
+            isViewingOnWeb: false,
+        };
+    },
+    mounted() {
+        function isWeb() {
+            return window.matchMedia('(display-mode: browser)').matches;
+        }
+
+        this.isViewingOnWeb = isWeb();
+    },
 };
 </script>
 
