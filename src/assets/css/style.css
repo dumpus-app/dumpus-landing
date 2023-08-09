@@ -88,15 +88,6 @@ a:active {
     text-decoration: none;
 }
 
-.imageWrapper {
-    height: 714px;
-    background: var(--color-gray-900);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-    border-radius: 0px 0px 40px 40px;
-}
-
 .container {
     display: grid;
     margin: auto;
