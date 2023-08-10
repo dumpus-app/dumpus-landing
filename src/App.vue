@@ -8,19 +8,7 @@
     </div>
 </template>
 
-<script>
+<script setup lang="ts">
 import NavComponent from '@/components/nav/Nav.vue';
 import FooterComponent from '@/components/footer/Footer.vue';
-
-export default {
-    name: 'DumpusLanding',
-    components: {
-        NavComponent,
-        FooterComponent,
-    },
-};
 </script>
-
-<style>
-@import url('@/assets/css/style.css');
-</style>

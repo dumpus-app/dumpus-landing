@@ -108,12 +108,4 @@
     </article>
 </template>
 
-<script>
-export default {
-    name: 'Terms',
-};
-</script>
-
-<style scoped>
-@import url('@/assets/css/legal/legal.css');
-</style>
+<style src="@/assets/css/legal/legal.css"></style>

@@ -35,12 +35,4 @@
     </footer>
 </template>
 
-<script>
-export default {
-    name: 'Footer',
-};
-</script>
-
-<style>
-@import url('@/assets/css/utils/footer/footer.css');
-</style>
+<style src="@/assets/css/utils/footer/footer.css" scoped></style>

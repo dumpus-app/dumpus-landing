@@ -31,17 +31,14 @@
     </header>
 </template>
 
-<style scoped>
-@import url('@/assets/css/utils/nav/nav.css');
-</style>
+<style src="@/assets/css/utils/nav/nav.css" scoped></style>
 
-<script>
-export default {
-    name: 'Nav',
-    methods: {
-        returnHome() {
-            this.$router.push('/');
-        },
-    },
-};
+<script setup lang="ts">
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+
+function returnHome() {
+    router.push('/');
+}
 </script>

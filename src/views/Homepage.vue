@@ -1,9 +1,9 @@
 <template>
     <div class="iphonePreview">
         <div class="videoContainer hidden">
-            <video class="screenvideo" autoplay="autoplay" controls="controls"></video>
+            <video class="screenvideo" autoplay="true" controls="true"></video>
         </div>
-        <img class="iphoneScreen" src="@/assets/img/screenshot/framed_screenshot.png" alt />
+        <img class="iphoneScreen" src="@/assets/img/screenshot/framed_screenshot.png" alt="" />
     </div>
     <div class="appInfo">
         <div class="appIconShadow">
@@ -146,24 +146,14 @@
     </div>
 </template>
 
-<script>
-export default {
-    name: 'Homepage',
-    data() {
-        return {
-            isViewingOnWeb: false,
-        };
-    },
-    mounted() {
-        function isWeb() {
-            return window.matchMedia('(display-mode: browser)').matches;
-        }
+<script setup lang="ts">
+import { ref, onMounted } from 'vue';
 
-        this.isViewingOnWeb = isWeb();
-    },
-};
+const isViewingOnWeb = ref(false);
+
+onMounted(() => {
+    isViewingOnWeb.value = window.matchMedia('(display-mode: browser)').matches;
+});
 </script>
 
-<style scoped>
-@import url('@/assets/css/homepage.css');
-</style>
+<style src="@/assets/css/homepage.css"></style>

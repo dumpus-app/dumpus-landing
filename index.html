@@ -1,23 +1,22 @@
 <!doctype html>
-<html lang="en-US">
+<html lang="en">
     <head>
-        <meta charset="utf-8" />
+        <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-        <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
-        <title class="pageTitle">Dumpus - Gain insight into your Discord activity</title>
+        <link rel="icon" href="/favicon.ico" />
+        <title>Dumpus - Gain insight into your Discord activity</title>
 
         <meta
             name="description"
             content="Don't feel like waiting until the end of the year to see your Spotify Wrapped? No problem, you can do that any time of the year with up-to-date data!"
         />
-        <link rel="icon" href="<%= BASE_URL %>appicon.ico" />
         <meta property="og:title" content="Dumpus - Gain insight into your Discord activity" />
         <meta
             property="og:description"
             content="Dumpus - Stats for Discord is the all new way to get detailed statistics and info about your Discord activity from your Discord Data Package"
         />
-        <meta property="og:image" content="https://dumpus.app/assets/og.png" />
+        <meta property="og:image" content="https://dumpus.app/og.png" />
         <meta property="og:url" content="https://dumpus.app" />
 
         <meta name="apple-itunes-app" content="app-id=6450952260" />
@@ -29,17 +28,7 @@
         />
     </head>
     <body>
-        <noscript>
-            <strong
-                >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly
-                without JavaScript enabled. Please enable it to continue.</strong
-            >
-        </noscript>
         <div id="app"></div>
-
-        <script
-            src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"
-            type="e930e5b18861333edfa304e6-text/javascript"
-        ></script>
+        <script type="module" src="/src/main.ts"></script>
     </body>
 </html>
