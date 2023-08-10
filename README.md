@@ -4,8 +4,8 @@ This website is inspired from the one made by <a href="https://sjoerd.dev">sjoer
 
 ## Project setup
 
-- Install PNPM with `corepack prepare pnpm@latest --activate`
-- Install dependencies with `pnpm install`
+-   Install PNPM with `corepack prepare pnpm@latest --activate`
+-   Install dependencies with `pnpm install`
 
 ### Compiles and hot-reloads for development
 
