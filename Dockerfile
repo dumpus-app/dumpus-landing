@@ -2,7 +2,7 @@
 FROM node:20.4.0-alpine
 
 # Install PNPM
-RUN npm install -g pnpm
+RUN npm install -g pnpm serve
 
 # Create application directory and move there
 WORKDIR /app
@@ -23,4 +23,4 @@ RUN pnpm run build
 EXPOSE 3000
 
 # Start the server
-CMD ["pnpm", "preview"]
+CMD ["pnpm", "serve", "dist"]
