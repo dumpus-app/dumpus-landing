@@ -117,3 +117,15 @@ a:active {
 .hidden {
     display: none;
 }
+
+.iconTop {
+    color: var(--color-brand-300);
+}
+
+.socialIconBack {
+    color: var(--color-gray-800);
+}
+
+.socialIconTop {
+    color: var(--color-brand-300);
+}

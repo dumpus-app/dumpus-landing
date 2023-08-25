@@ -147,13 +147,28 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, onUnmounted } from 'vue';
 
 const isViewingOnWeb = ref(false);
 
+function setStyles({ reset = false }: { reset?: boolean } = {}) {
+    const el = document.getElementsByClassName('imageWrapper')[0] as HTMLDivElement;
+    el.style.height = reset ? '' : '800px';
+    el.style.background = reset ? '' : 'var(--color-gray-900)';
+    el.style.backgroundRepeat = reset ? '' : 'no-repeat';
+    el.style.backgroundSize = reset ? '' : 'cover';
+    el.style.backgroundPosition = reset ? '' : 'top';
+    el.style.borderRadius = reset ? '' : '0px 0px 40px 40px';
+}
+
 onMounted(() => {
     isViewingOnWeb.value = window.matchMedia('(display-mode: browser)').matches;
+    setStyles();
+});
+
+onUnmounted(() => {
+    setStyles({ reset: true });
 });
 </script>
 
-<style src="@/assets/css/homepage.css"></style>
+<style src="@/assets/css/homepage.css" scoped></style>
