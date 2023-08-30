@@ -100,6 +100,21 @@ a:active {
     grid-template-areas: 'h h h h h h h h h h h h' 'p p p p p i i i i i i i' 'c c c c c c c c c c c c' 't t t t t t t t t t t t' 'f f f f f f f f f f f f';
 }
 
+@media only screen and (max-width: 768px) {
+    .container {
+        grid-template-rows: 80px 811px auto auto;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .container {
+        grid-column-gap: 0px;
+        grid-template-columns: 1;
+        grid-template-rows: 115px auto auto auto auto;
+        grid-template-areas: 'h h h h h h h h h h h h' 'i i i i i i i i i i i i' 'p p p p p p p p p p p p' 'c c c c c c c c c c c c' 't t t t t t t t t t t t' 'f f f f f f f f f f f f';
+    }
+}
+
 .page {
     margin-top: 30px;
     margin-bottom: 70px;
