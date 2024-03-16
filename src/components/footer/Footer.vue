@@ -30,6 +30,7 @@
             >
             <router-link to="/legal/privacy" target="_self">Privacy Policy</router-link>
             <router-link to="/legal/terms" target="_self">Terms & Conditions</router-link>
+            <router-link to="/legal/data-deletion" target="_self">Data Deletion</router-link>
             <router-link to="/help" target="_self">Help</router-link>
         </div>
     </footer>
