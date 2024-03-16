@@ -17,6 +17,11 @@ export const routes: RouteRecordRaw[] = [
         component: () => import('./views/legal/Privacy.vue'),
     },
     {
+        path: '/legal/data-deletion',
+        name: 'data-deletion',
+        component: () => import('./views/legal/DataDeletion.vue'),
+    },
+    {
         path: '/help',
         name: 'help',
         component: () => import('./views/Help.vue'),
